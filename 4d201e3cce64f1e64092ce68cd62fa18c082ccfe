@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_d9097a33",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_3907ce1d",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_19049215",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_74ff8b01",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_54040f14",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_b409232f",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_940ea732",
+        "filename": "overlay/packages/apps/Mms/res/xml/mms_config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-20T08:39:51Z",
+      "side": 1,
+      "message": "This is a default.",
+      "revId": "4d201e3cce64f1e64092ce68cd62fa18c082ccfe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
