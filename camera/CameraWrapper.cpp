@@ -222,7 +222,9 @@ char * camera_fixup_setparams(struct camera_device * device, const char * settin
 #endif
 
     const char* recordingHint = params.get(android::CameraParameters::KEY_RECORDING_HINT);
-    const bool isVideo = recordingHint && !strcmp(recordingHint, "true");
+    bool isVideo = recordingHint && !strcmp(recordingHint, "true");
+    const char *flashMode = params.get(android::CameraParameters::KEY_FLASH_MODE);
+    bool isTorch = flashMode && !strcmp(flashMode, android::CameraParameters::FLASH_MODE_TORCH);
 
     // fix params here
     // No need to fix-up ISO_HJR, it is the same for userspace and the camera lib
@@ -242,8 +244,28 @@ char * camera_fixup_setparams(struct camera_device * device, const char * settin
         }
     }
 
+    bool wasTorch = false;
+    if (fixed_set_params[id]) {
+        /* When torch mode is switched off, it is important not to set ZSL, to
+         * avoid a segmentation violation in libcameraservice.so. Hence, check
+         * if the last call to setparams enabled torch mode */
+        android::CameraParameters old_params;
+        old_params.unflatten(android::String8(fixed_set_params[id]));
+
+        const char *old_flashMode = old_params.get(android::CameraParameters::KEY_FLASH_MODE);
+        wasTorch = old_flashMode && !strcmp(old_flashMode, android::CameraParameters::FLASH_MODE_TORCH);
+    }
+
+    if (!isTorch && !wasTorch) {
+        if (isVideo) {
+            params.set(android::CameraParameters::KEY_DIS, android::CameraParameters::DIS_DISABLE);
+            params.set(android::CameraParameters::KEY_ZSL, android::CameraParameters::ZSL_OFF);
+        } else {
+            params.set(android::CameraParameters::KEY_ZSL, android::CameraParameters::ZSL_ON);
+        }
+    }
+
     if (id != 1) {
-        params.set(android::CameraParameters::KEY_ZSL, isVideo ? "off" : "on");
         const char* sceneMode = params.get("scene-mode");
         if (sceneMode && !strcmp(sceneMode,"hdr")) {
             camera_send_command(device, 1014, 1, 0);
@@ -256,7 +278,6 @@ char * camera_fixup_setparams(struct camera_device * device, const char * settin
     }
 
     if (isVideo) {
-        params.set("dis","disable");
         const char* videoHfr = params.get(android::CameraParameters::KEY_VIDEO_HIGH_FRAME_RATE);
         if (videoHfr && strcmp(videoHfr, "off") != 0) {
             if (strcmp(videoHfr,"120") == 0) {
