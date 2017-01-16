@@ -1,1 +1,3 @@
 add_lunch_combo lineage_ks01lte-eng
+add_lunch_combo lineage_ks01lte-userdebug
+add_lunch_combo lineage_ks01lte-user
