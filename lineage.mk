@@ -19,10 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/samsung/ks01lte/ks01lte.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_ks01lte
+PRODUCT_NAME := lineage_ks01lte
 PRODUCT_DEVICE := ks01lte
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-I9506
