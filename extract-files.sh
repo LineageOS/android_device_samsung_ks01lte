@@ -18,8 +18,8 @@
 
 set -e
 
-DEVICE=samsung
-VENDOR=ks01lte
+DEVICE=ks01lte
+VENDOR=samsung
 
 export INITIAL_COPYRIGHT_YEAR=2014
 
