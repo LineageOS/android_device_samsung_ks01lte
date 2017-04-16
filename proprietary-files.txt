@@ -138,7 +138,8 @@ cameradata/datapattern_420sp.yuv
 cameradata/datapattern_front_420sp.yuv
 etc/C13QS_imx135_module_info.xml
 etc/D13QS_imx135_module_info.xml
-lib/hw/camera.msm8974.so:lib/hw/camera.vendor.msm8974.so
+lib/hw/camera.msm8974.so
+lib/hw/camera.vendor.msm8974.so
 lib/libarcsoft_nighthawk.so
 lib/libarcsoft_flawlessface.so
 lib/libarcsoft_night_shot.so
