@@ -114,10 +114,6 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf \
